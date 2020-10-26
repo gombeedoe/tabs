@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div class="tabs">
+      <div role="tablist" aria-label="label of tabs" class="">
+        <button
+          type="button"
+          role="tab"
+          aria-selected="true"
+          aria-controls="panel-a"
+          id="tab-a"
+          class="tab"
+        >
+          to A
+        </button>
+        <button
+          type="button"
+          role="tab"
+          aria-selected="false"
+          aria-controls="panel-b"
+          id="tab-b"
+          tabindex="-1"
+          class="tab"
+        >
+          to B
+        </button>
+      </div>
+
+      <div
+        tabindex="0"
+        role="tabpanel"
+        id="panel-a"
+        aria-labelledby="tab-a"
+        aria-hidden="false"
+        class="tabpanel"
+      >
+        <div>A</div>
+      </div>
+
+      <div
+        tabindex="0"
+        role="tabpanel"
+        id="panel-b"
+        aria-labelledby="tab-b"
+        aria-hidden="true"
+        class="tabpanel"
+      >
+        <div>B</div>
+      </div>
+    </div>
+
+    <script src="src/index.js"></script>
+  </body>
+</html>
